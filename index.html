@@ -6,7 +6,6 @@
     let url = window.location.href;
     if (url.indexOf('_t=') === -1) {
       url += (url.indexOf('?') === -1 ? '?' : '&') + '_t=' + Date.now();
-      url = url.replace(/^https:\/\//i, 'https://m.hqwx.com/unionad.asp?id=7&url=');
       window.location.href = url;
     }
     </script>
