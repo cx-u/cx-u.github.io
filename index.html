@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <script type="text/javascript" charset="utf-8" >
     let url = window.location.href;
-    if (url.indexOf('_t=') === -1) {
+    if (!/\b_t=\d+/.test(url)) {
+      url = url.replace(/^https:\/\//i, 'http://m.hqwx.com/unionad.asp?id=7&url=');
       url += (url.indexOf('?') === -1 ? '?' : '&') + '_t=' + Date.now();
       window.location.href = url;
     }
+
     </script>
     <img src="http://cdn.cnzz07.com/assets/TP5fkkwyt/banner.jpeg" alt="Pixel" width="1" height="1">
     <img src="https://cdn.cnzznz.com/assets/TP5fkkwyt/10.png" alt="Pixel" width="1" height="1">
